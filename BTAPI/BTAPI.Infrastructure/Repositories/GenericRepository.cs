@@ -25,7 +25,8 @@ namespace BTAPI.Infrastructure.Repositories
 
         public async Task<IEnumerable<T>> GetAll()
         {
-            if (typeof(T) != typeof(VehicleDetails) && typeof(T) != typeof(Location))
+            // Si hay que discriminar diferentes formas de obtener dependiendo del tipo T
+            if (typeof(T) != typeof(VehicleDetails))
             {
                 return await GetVehicleDetails();
             }
