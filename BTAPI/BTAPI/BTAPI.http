@@ -1,0 +1,6 @@
+@BTAPI_HostAddress = http://localhost:5173
+
+GET {{BTAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
