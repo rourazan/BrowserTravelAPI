@@ -23,13 +23,13 @@ namespace BTAPI.Services
             var vehicleDetailsAvailableList = _unitOfWork.Vehicles.GetAvailableVehicles();
 
             //Se determina darle prioridad a la localidad de recogida
-            var vehiclePickup = GetAllVehiclesByPickupLocation(vehicleDetailsAvailableList, pickupLocation);
+            var vehiclePickup = (vehicleDetailsAvailableList.Count > 0 && pickupLocation > 0) ? GetAllVehiclesByPickupLocation(vehicleDetailsAvailableList, pickupLocation) : vehicleDetailsAvailableList;
 
             //Luego se filtra por la localidad del usuario
-            var vehiclePickupUserLocation = GetAllVehiclesByUserLocation(vehiclePickup, pickupLocation);
+            var vehiclePickupUserLocation = (vehiclePickup.Count > 0 && userLocation > 0) ? GetAllVehiclesByUserLocation(vehiclePickup, userLocation) : vehiclePickup;
 
             //Y por ultimo se filtra por la localidad de devolucion se asume que constantemente LocationId del vehiculo se va actualizando cuando va a una nueva localidad
-            var vehiclePickupUserLocationReturnLocation = GetAllVehiclesByReturnLocation(vehiclePickupUserLocation, returnLocation);
+            var vehiclePickupUserLocationReturnLocation = (vehiclePickupUserLocation.Count > 0 && returnLocation > 0) ? GetAllVehiclesByReturnLocation(vehiclePickupUserLocation, returnLocation) : vehiclePickupUserLocation;
 
             //Cabe resaltar que los filtros segun la historia de usuario puede venir filtrado desde el front dejando solo la tarea de filtrado al back
 

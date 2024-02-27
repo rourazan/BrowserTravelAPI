@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTAPI", "BTAPI\BTAPI.csproj", "{718C5021-551A-40D6-AE7B-1295CEE65C5C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BTAPI", "BTAPI\BTAPI.csproj", "{718C5021-551A-40D6-AE7B-1295CEE65C5C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTAPI.Infrastructure", "BTAPI.Infrastructure\BTAPI.Infrastructure.csproj", "{366CD52F-8DDB-4919-A993-82DEEDDB8698}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BTAPI.Infrastructure", "BTAPI.Infrastructure\BTAPI.Infrastructure.csproj", "{366CD52F-8DDB-4919-A993-82DEEDDB8698}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTAPI.Core", "BTAPI.Core\BTAPI.Core.csproj", "{F7EE00E5-EFCA-4FCF-8364-9FB3FD805F0B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BTAPI.Core", "BTAPI.Core\BTAPI.Core.csproj", "{F7EE00E5-EFCA-4FCF-8364-9FB3FD805F0B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTAPI.Services", "BTAPI.Services\BTAPI.Services.csproj", "{5EC11E70-BFFA-414F-9B24-F752B307AA0C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BTAPI.Services", "BTAPI.Services\BTAPI.Services.csproj", "{5EC11E70-BFFA-414F-9B24-F752B307AA0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTAPI.Test", "BTAPI.Test\BTAPI.Test.csproj", "{EF8B4FA4-F7C9-4F87-A5CF-F355D9B991C0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{5EC11E70-BFFA-414F-9B24-F752B307AA0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5EC11E70-BFFA-414F-9B24-F752B307AA0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5EC11E70-BFFA-414F-9B24-F752B307AA0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF8B4FA4-F7C9-4F87-A5CF-F355D9B991C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF8B4FA4-F7C9-4F87-A5CF-F355D9B991C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF8B4FA4-F7C9-4F87-A5CF-F355D9B991C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF8B4FA4-F7C9-4F87-A5CF-F355D9B991C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
